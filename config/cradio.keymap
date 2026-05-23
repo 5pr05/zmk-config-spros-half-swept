@@ -41,6 +41,29 @@
             timeout-ms = <200>;
             require-prior-idle-ms = <200>;
         };
+
+        russian_x {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <8 9>;
+            layers = <4>;
+        };
+
+        switch_to_russian {
+            bindings = <&sl 4>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
+
+        russian_e {
+            bindings = <&kp SQT>;
+            key-positions = <18 19>;
+        };
+
+        switch_to_english {
+            bindings = <&sl 0>;
+            key-positions = <10 11>;
+            layers = <4>;
+        };
     };
 
     macros {
@@ -57,23 +80,23 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W       &kp F        &kp P       &kp B        &kp J      &kp L       &kp U        &kp Y       &kp SEMICOLON
-&ht LSHFT A  &ht LALT R  &ht LCTRL S  &ht LGUI T  &kp G        &kp M      &ht RGUI N  &ht RCTRL E  &ht RALT I  &ht RSHFT O
-&kp Z        &kp X       &kp C        &kp D       &kp V        &kp K      &kp H       &kp COMMA    &kp DOT     &kp FSLH
+&kp Q        &kp W       &kp F        &kp P       &kp B        &kp J      &kp L       &kp U      &kp Y    &kp SEMICOLON
+&ht LSHFT A  &ht LALT R  &ht LCTRL S  &ht LGUI T  &kp G        &kp M      &kp N       &kp E      &kp I    &ht RSHFT O
+&kp Z        &kp X       &kp C        &kp D       &kp V        &kp K      &kp H       &kp COMMA  &kp DOT  &kp FSLH
                                       &lt 2 TAB   &kp ENTER    &kp SPACE  &lt 1 BSPC
             >;
         };
 
         right_layer {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0
-&kp DEL       &trans        &trans        &trans        &trans     &trans        &trans  &trans  &trans  &trans
-&caps_word    &trans        &trans        &trans        &trans     &trans        &trans  &trans  &trans  &trans
-                                          &trans        &kp ESC    &trans        &trans
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &ht BACKSPACE N0
+&kp LEFT_SHIFT  &trans        &trans        &kp LEFT_WIN  &trans    &trans        &trans  &trans  &trans  &kp LS(DEL)
+&caps_word      &trans        &trans        &trans        &trans    &trans        &trans  &trans  &trans  &trans
+                                            &trans        &trans    &trans        &trans
             >;
         };
 
-        left_layer {
+        vim {
             bindings = <
 &kp ESCAPE      &trans  &kp K   &trans  &trans    &trans     &trans          &kp UP_ARROW    &trans           &trans
 &kp LEFT_SHIFT  &kp H   &kp J   &kp L   &trans    &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
@@ -88,6 +111,15 @@
 &bootloader  &trans  &trans  &trans      &bt BT_SEL 1    &trans  &trans  &trans  &trans  &bootloader
 &trans       &trans  &trans  &bt BT_CLR  &bt BT_SEL 2    &trans  &trans  &trans  &trans  &trans
                              &trans      &trans          &trans  &trans
+            >;
+        };
+
+        russian {
+            bindings = <
+&kp Q  &kp W  &kp E  &kp R           &ht GRAVE T    &kp Y      &kp U          &kp I      &kp O       &kp P
+&kp A  &kp S  &kp D  &kp F           &kp G          &kp H      &kp J          &kp K      &kp L       &kp SEMICOLON
+&kp Z  &kp X  &kp C  &kp V           &kp B          &kp N      &kp M          &kp COMMA  &kp PERIOD  &kp RIGHT_BRACKET
+                     &kp LEFT_SHIFT  &kp LCTRL      &kp SPACE  &kp BACKSPACE
             >;
         };
     };
