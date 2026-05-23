@@ -122,10 +122,10 @@
 
         russian {
             bindings = <
-&kp Q  &kp W  &kp E  &kp R           &ht GRAVE T    &kp Y      &kp U          &kp I      &kp O       &kp P
-&kp A  &kp S  &kp D  &kp F           &kp G          &kp H      &kp J          &kp K      &kp L       &kp SEMICOLON
-&kp Z  &kp X  &kp C  &kp V           &kp B          &kp N      &kp M          &kp COMMA  &kp PERIOD  &ht QUESTION RIGHT_BRACKET
-                     &kp LEFT_SHIFT  &kp LCTRL      &kp SPACE  &kp BACKSPACE
+&kp Q  &kp W  &kp E  &kp R           &ht GRAVE T        &kp Y      &kp U          &kp I      &kp O       &kp P
+&kp A  &kp S  &kp D  &kp F           &kp G              &kp H      &kp J          &kp K      &kp L       &kp SEMICOLON
+&kp Z  &kp X  &kp C  &kp V           &kp B              &kp N      &kp M          &kp COMMA  &kp PERIOD  &ht QUESTION RIGHT_BRACKET
+                     &kp LEFT_SHIFT  &ht LCTRL ENTER    &kp SPACE  &kp BACKSPACE
             >;
         };
     };
