@@ -86,19 +86,19 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W  &kp F  &kp P       &kp B        &kp J      &kp L       &kp U      &kp Y    &kp SEMICOLON
-&ht LSHFT A  &kp R  &kp S  &ht LGUI T  &kp G        &kp M      &kp N       &kp E      &kp I    &ht RSHFT O
-&kp Z        &kp X  &kp C  &kp D       &kp V        &kp K      &kp H       &kp COMMA  &kp DOT  &kp FSLH
-                           &lt 2 TAB   &kp ENTER    &kp SPACE  &lt 1 BSPC
+&kp Q        &kp W  &kp F  &kp P       &kp B              &kp J      &kp L       &kp U      &kp Y    &kp SEMICOLON
+&ht LSHFT A  &kp R  &kp S  &ht LGUI T  &kp G              &kp M      &kp N       &kp E      &kp I    &ht RSHFT O
+&kp Z        &kp X  &kp C  &kp D       &kp V              &kp K      &kp H       &kp COMMA  &kp DOT  &kp FSLH
+                           &lt 2 TAB   &ht LCTRL ENTER    &kp SPACE  &lt 1 BSPC
             >;
         };
 
         right_layer {
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &ht BACKSPACE N0
-&kp LEFT_SHIFT  &trans        &trans        &kp LEFT_WIN  &trans    &trans        &trans  &trans  &trans  &kp LS(DEL)
-&caps_word      &trans        &trans        &trans        &trans    &trans        &trans  &trans  &trans  &trans
-                                            &trans        &trans    &trans        &trans
+&kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3       &kp NUMBER_4  &kp N5    &kp NUMBER_6  &kp N7  &kp N8     &kp N9     &ht BACKSPACE N0
+&kp LEFT_SHIFT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_WIN  &trans    &trans        &trans  &kp MINUS  &kp EQUAL  &kp LS(DEL)
+&caps_word      &trans            &trans             &trans        &trans    &trans        &trans  &trans     &kp SQT    &kp NON_US_BACKSLASH
+                                                     &trans        &trans    &trans        &trans
             >;
         };
 
