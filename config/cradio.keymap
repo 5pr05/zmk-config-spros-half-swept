@@ -48,12 +48,6 @@
             layers = <4>;
         };
 
-        switch_to_russian {
-            bindings = <&sl 4>;
-            key-positions = <10 11>;
-            layers = <0>;
-        };
-
         russian_e {
             bindings = <&kp SQT>;
             key-positions = <18 19>;
@@ -64,6 +58,11 @@
             key-positions = <10 11>;
             layers = <4>;
         };
+
+        change_language {
+            bindings = <&change_language>;
+            key-positions = <20 31>;
+        };
     };
 
     macros {
@@ -73,6 +72,13 @@
             bindings = <&kp FSLH &kp SPACE &kp LBKT &kp SPACE &kp CARET &kp MINUS &kp CARET &kp RBKT &kp UNDER &kp POUND &kp POUND>;
             label = "ROBOT";
         };
+
+        change_language: change_language {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT_SHIFT) &tog 4>;
+            label = "CHANGE_LANGUAGE";
+        };
     };
 
     keymap {
@@ -80,10 +86,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W       &kp F        &kp P       &kp B        &kp J      &kp L       &kp U      &kp Y    &kp SEMICOLON
-&ht LSHFT A  &ht LALT R  &ht LCTRL S  &ht LGUI T  &kp G        &kp M      &kp N       &kp E      &kp I    &ht RSHFT O
-&kp Z        &kp X       &kp C        &kp D       &kp V        &kp K      &kp H       &kp COMMA  &kp DOT  &kp FSLH
-                                      &lt 2 TAB   &kp ENTER    &kp SPACE  &lt 1 BSPC
+&kp Q        &kp W  &kp F  &kp P       &kp B        &kp J      &kp L       &kp U      &kp Y    &kp SEMICOLON
+&ht LSHFT A  &kp R  &kp S  &ht LGUI T  &kp G        &kp M      &kp N       &kp E      &kp I    &ht RSHFT O
+&kp Z        &kp X  &kp C  &kp D       &kp V        &kp K      &kp H       &kp COMMA  &kp DOT  &kp FSLH
+                           &lt 2 TAB   &kp ENTER    &kp SPACE  &lt 1 BSPC
             >;
         };
 
