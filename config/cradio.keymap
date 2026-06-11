@@ -104,10 +104,10 @@
 
         vim {
             bindings = <
-&kp ESCAPE      &trans  &kp K   &trans  &trans    &trans     &trans          &kp UP_ARROW    &trans           &trans
-&kp LEFT_SHIFT  &kp H   &kp J   &kp L   &trans    &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&kp LCTRL       &trans  &trans  &trans  &trans    &trans     &trans          &trans          &trans           &trans
-                                &trans  &trans    &kp SPACE  &trans
+&kp ESCAPE      &trans          &kp UP_ARROW    &trans           &trans    &trans     &trans  &kp K   &trans  &trans
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans     &kp H   &kp J   &kp L   &trans
+&kp LCTRL       &trans          &trans          &trans           &trans    &trans     &trans  &trans  &trans  &trans
+                                                &trans           &trans    &kp SPACE  &trans
             >;
         };
 
